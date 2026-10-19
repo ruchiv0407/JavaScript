@@ -1,10 +1,13 @@
-let color="red";
-if (color==="red"){
-    console.log("Stop! Light is red");
+let marks="60";
+if (marks>=90){
+    console.log("A+ grade");
 }
-if (color==="yellow"){
-    console.log("Slow down! Light is yellow");
+else if (marks>=80){
+    console.log("A grade");
 }
-if (color==="green"){
-    console.log("Go. Light is green");
-}   
+else if (marks>=70){
+    console.log("B grade");
+}       
+else if (marks>50){
+    console.log("C grade");
+}
