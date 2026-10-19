@@ -1,13 +1,16 @@
-let size="L";
-if (size==="XL") {
-    console.log("price is Rs.250");
+//Practice Q3a
+let str = "apple";
+if (str[0] === "a" && str.length>3) {
+    console.log("The string is good");
+}   
+else {
+    console.log("The string is not good");   
 }
-if (size==="L") {
-    console.log("price is Rs.200");
+//Practice Q3b
+let num = 12;
+if ((num % 3===0)&&(num+1==15) || (num-1==11)) {
+    console.log("safe");
 }
-if (size==="M") {
-    console.log("price is Rs.100");
-}
-if (size==="S") {
-    console.log("price is Rs.50");
+else {
+    console.log("not safe");
 }
