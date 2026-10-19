@@ -1,11 +1,10 @@
-let a=10;
-let b=5;
-console.log(a+b);
-console.log(a-b);
-console.log(a*b);
-console.log(a/b);
-console.log(a%b);
-console.log(a**b);
-console.log(a++);
-console.log(++a);
-console.log(a=b);
+let color="red";
+if (color==="red"){
+    console.log("Stop! Light is red");
+}
+if (color==="yellow"){
+    console.log("Slow down! Light is yellow");
+}
+if (color==="green"){
+    console.log("Go. Light is green");
+}   
