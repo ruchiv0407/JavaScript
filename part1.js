@@ -1,13 +1,13 @@
-let marks="60";
-if (marks>=90){
-    console.log("A+ grade");
+let size="L";
+if (size==="XL") {
+    console.log("price is Rs.250");
 }
-else if (marks>=80){
-    console.log("A grade");
+if (size==="L") {
+    console.log("price is Rs.200");
 }
-else if (marks>=70){
-    console.log("B grade");
-}       
-else if (marks>50){
-    console.log("C grade");
+if (size==="M") {
+    console.log("price is Rs.100");
+}
+if (size==="S") {
+    console.log("price is Rs.50");
 }
