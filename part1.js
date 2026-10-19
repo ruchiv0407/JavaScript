@@ -1,5 +1,11 @@
-let penprice=10;
-let notebookprice=20;
-//let output = "The total price is:" + (penprice + notebookprice)+"rupees";
-let output = `The total price is: ${penprice + notebookprice} rupees`;  
-console.log(output);
+let a=10;
+let b=5;
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a%b);
+console.log(a**b);
+console.log(a++);
+console.log(++a);
+console.log(a=b);
