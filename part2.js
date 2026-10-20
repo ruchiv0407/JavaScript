@@ -1,11 +1,20 @@
-//PQ3a
-let months=["january","july","march","august"];
-console.log(months.splice(0,1));
-console.log(months);
-console.log(months.splice(1,0,"june"));
-console.log(months);
-//PQ3b
-let lang=["c","c++","javascript","html","python","java","c#","sql"];
-console.log(lang);
-console.log(lang.reverse());
-console.log(lang.indexOf("javascript"));
+//Array References
+let arr=['a','b','c'];
+console.log(arr);
+let arrcopy=arr;
+console.log(arr==arrcopy);
+console.log(arr===arrcopy);
+console.log(arr.push('d'));
+//same changes in both array
+console.log(arr);
+console.log(arrcopy);
+console.log(arrcopy.pop('d'));
+console.log(arr);
+console.log(arrcopy);
+//different changes
+arrcopy=['a','b','c'];
+console.log(arrcopy);
+console.log(arr.push('d'));
+console.log(arr);
+console.log(arrcopy);
+
