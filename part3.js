@@ -1,11 +1,4 @@
-const favmovie = "avatar";
-let guess=prompt("guess my favourite movie");
-while ((guess!=favmovie)&&(guess!='quit')) {
-    guess=prompt("wrong movie guess! Please try again");
-}
-if(guess==favmovie) {
-    console.log("congrats! YOU WIN");
-}
-else {
-    console.log("you quit");
+let fruits=["mango","apple","banana","litchi","orange"];
+for (let i=0;i<fruits.length;i++) {
+    console.log(i,fruits[i]);
 }
