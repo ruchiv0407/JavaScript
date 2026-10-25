@@ -1,5 +1,4 @@
-function printInfo(name,age) {
-    console.log(`${name}'s age is ${age}`);
+function average(a,b,c) {
+    console.log(`average of three number is ${(a+b+c)/3}`);
 }
-printInfo("ruchi","20");
-printInfo("aman");
+average(1,2,3);
