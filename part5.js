@@ -1,7 +1,5 @@
-function dice(){
-    let random= Math.floor(Math.random()*6)+1;
-    console.log(random);
+function printInfo(name,age) {
+    console.log(`${name}'s age is ${age}`);
 }
-dice();
-dice();
-dice();
+printInfo("ruchi","20");
+printInfo("aman");
