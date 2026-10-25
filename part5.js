@@ -1,4 +1,6 @@
-function average(a,b,c) {
-    console.log(`average of three number is ${(a+b+c)/3}`);
+function multiplication(n) {
+  for(let i=n;i<=n*10;i+=n) {
+    console.log(i);
+  } 
 }
-average(1,2,3);
+multiplication(2);
