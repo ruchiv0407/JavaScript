@@ -1,5 +1,7 @@
-function poem() {
-    console.log("Twinkle Twinkle Little star");
+function dice(){
+    let random= Math.floor(Math.random()*6)+1;
+    console.log(random);
 }
-poem();
-poem();
+dice();
+dice();
+dice();
