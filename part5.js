@@ -1,6 +1,8 @@
-function sum(a,b) {
-    console.log("hello");
-    return(a+b);
-    console.log("hello2");
+function getsum(n) {
+    let sum=0;
+    for (let i=0;i<=n;i++){
+        sum+=i;
+    }
+    return sum;
 }
-console.log(sum(6,8));
+console.log(getsum(10));
