@@ -1,6 +1,6 @@
-function multiplication(n) {
-  for(let i=n;i<=n*10;i+=n) {
-    console.log(i);
-  } 
+function sum(a,b) {
+    console.log("hello");
+    return(a+b);
+    console.log("hello2");
 }
-multiplication(2);
+console.log(sum(6,8));
