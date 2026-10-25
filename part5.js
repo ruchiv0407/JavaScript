@@ -1,8 +1,9 @@
-function getsum(n) {
-    let sum=0;
-    for (let i=0;i<=n;i++){
-        sum+=i;
-    }
-    return sum;
+let str=["hello","hey","byy","ee"];
+function concat(str) {
+    let result="";
+for (let i=0;i<str.length;i++){
+result+=str;
 }
-console.log(getsum(10));
+  return result;
+}
+console.log(concat(str));
