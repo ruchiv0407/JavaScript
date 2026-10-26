@@ -1,9 +1,7 @@
-console.log("hello");
-console.log("hello");
-try {
-    console.log(a);
-} catch {
-    console.log("error!! a is not define");
+const cube =(n)=> {
+    console.log(n*n*n);
 }
-console.log("hello2");
-console.log("hello2");
+cube(3);
+//Implicit return
+const mul=(a,b)=> (a*b);
+console.log(mul(4,6));
