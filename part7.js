@@ -1,18 +1,13 @@
-let arr=[2,3,4,5,22,3,5];
-//normal method
-/*let max=-1;
-for(let i=0;i<arr.length;i++) {
-    if(arr[i]>max) {
-        max=arr[i];
-    } 
-}
-console.log(max);*/
-let max=arr.reduce((max,el)=>
-{
-    if(el>max) {
-        return el;
+//PQ1
+let arr=[10,20,30];
+let ans=arr.every((el)=>el%10==0);
+console.log(ans); 
+//PQ2
+let min=arr.reduce((min,el)=> {
+    if(min<el) {
+        return min;
     } else {
-        return max;
+        return el;
     }
 });
-console.log
+console.log(min);
