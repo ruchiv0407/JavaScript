@@ -1,8 +1,7 @@
-//select first element(single value)
-console.dir(document.querySelector('p'));
-console.dir(document.querySelector('#description'));
-console.dir(document.querySelector('.oldImg'));
-//nesting
-console.dir(document.querySelector('div a'));
-//select all p element(whole collection)
-console.dir(document.querySelectorAll('p'));
+let links=document.querySelectorAll(".box a");
+for(let i=0;i<links.length;i++) {
+    links[i].style.color="green";
+}
+//for(link of links) {
+//links.style.color="green";
+//}
