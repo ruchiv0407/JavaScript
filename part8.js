@@ -1,18 +1,24 @@
-let para1=document.createElement("p");
-para1.innerText="hey!! I'm red";
-document.querySelector("body").prepend(para1);
-para1.classList.add("red");
-let h3=document.createElement("h3");
-h3.innerText="Hey!! I'm a blue h3";
-document.querySelector("body").prepend(h3);
-h3.classList.add("blue");
+//Q1
+let button=document.createElement("button");
+let input=document.createElement("input");
+button.innerText="Click me";
+document.querySelector("body").append(input);
+document.querySelector("body").append(button);
 
-let div=document.createElement("div");
+//Q2
+button.setAttribute("id", "btn");
+input.setAttribute("placeholder", "username");
+
+//Q3
+let btn = document.querySelector("#btn");
+
+//Q4
 let h1=document.createElement("h1");
-let para2=document.createElement("p");
-h1.innerText="I'm in a div";
-para2.innerText="Mee Tooo!!";
-div.append(h1);
-div.append(para2);
-div.classList.add("box");
-document.querySelector("body").prepend(div);
+h1.innerText="DOM Practice";
+h1.classList.add("h1");
+document.querySelector("body").append(h1);
+
+//Q5
+let para=document.createElement("p");
+para.innerHTML="Apna College<b>Delta</b> Practice";//We use innerHTML
+document.querySelector("body").append(para);
