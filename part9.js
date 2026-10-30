@@ -1,9 +1,8 @@
-let btn= document.querySelector("button");
-console.dir(btn);
-//btn.onclick function()={
-//alert("btn was cliscked");
-//}
-function sayHello(){
-    console.log("Helllooo!!");
+let btns= document.querySelectorAll("button");
+for (btn of btns) {
+    btn.onclick=sayHello;
 }
-btn.onclick=sayHello;
+
+function sayHello(){
+    alert("Helllooo!!");
+}
