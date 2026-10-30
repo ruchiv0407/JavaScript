@@ -1,10 +1,10 @@
 let para1=document.createElement("p");
 para1.innerText="hey!! I'm red";
-document.querySelector("body").append(para1);
+document.querySelector("body").prepend(para1);
 para1.classList.add("red");
 let h3=document.createElement("h3");
 h3.innerText="Hey!! I'm a blue h3";
-document.querySelector("body").append(h3);
+document.querySelector("body").prepend(h3);
 h3.classList.add("blue");
 
 let div=document.createElement("div");
@@ -15,4 +15,4 @@ para2.innerText="Mee Tooo!!";
 div.append(h1);
 div.append(para2);
 div.classList.add("box");
-document.querySelector("body").append(div);
+document.querySelector("body").prepend(div);
