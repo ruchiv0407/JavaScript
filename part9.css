@@ -1,9 +1,5 @@
-body{
-    text-align: center;
-}
-div {
+.box {
     height: 100px;
-    width: 800px;
-    border: 1px solid black;
-    margin:auto
+    width: 100px;
+    background-color: pink;
 }
