@@ -1,23 +1,39 @@
-async function greet() {
-    return "Hello, World!";
-    throw "some random error";   //throw keyword is used to throw an error. 
-    return abc(); // this will throw an error because abc is not defined
-}
-console.log(greet()); 
-greet()
-.then((result) => {
-    console.log("promise was resolved")
-    console.log(result);
-})
-.catch((err) => {
-    console.log("promise was rejected:",err);
-    console.log(err);
+function getNum() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+        let num = Math.floor(Math.random()*10) + 1;
+        console.log("num is: " + num);
+        resolve();
+    },1000);
 });
+}
 
-
-//arrow async function
-
-let demo = async () => {
-    return 5;
+async function demo() {
+    await getNum();
+    await getNum();
+    await getNum();
+    getNum();
+    getNum();
 }
 console.log(demo());
+
+//another exaple
+
+h1 = document.querySelector("h1");
+
+function changeColor (color,delay) {
+    return new Promise((resolve, reject) => {
+    setTimeout(()=>{
+        h1.style.color=color;
+        console.log("color changed to: " + color);
+        resolve("color changed");
+    },delay);
+});
+}
+async function demo2() {
+    await changeColor("red",1000);
+    await changeColor("blue",1000);
+    await changeColor("green",1000);
+    await changeColor("yellow",1000);
+}
+demo2();
