@@ -1,22 +1,35 @@
-h1=document.querySelector("h1");
-
-function changeColor (color,delay,nextColorChange) {
-    setTimeout(()=>{
-        h1.style.color=color;
-        if(nextColorChange){
-            nextColorChange();
-        }
-   },delay);
+function savetoDb(data, success, failure) {
+    let internet = Math.floor(Math.random()*10) + 1;
+    if(internet > 4) {
+        success();
+    } else {
+        failure();
+    }
 }
 
-changeColor("red",1000,()=>{
-    changeColor("green",1000,()=>{
-        changeColor("blue",1000,()=>{
-            changeColor("orange",1000,()=>{
-                changeColor("yellow",1000);
-          });
-        });
-    });
-});
-
-//Callback nesting --> Callback hell
+savetoDb("apna college",
+    () => {
+        console.log("success:data saved successfully");
+        savetoDb(
+            "hello world",
+            () => {
+                console.log("success2:data2 saved successfully");
+                savetoDb(
+                    "Shraddha",
+                    () => {
+                        console.log("success3:data3 saved successfully");
+                    },
+                    () => {
+                        console.log("failure3:data3 not saved");
+                    }
+                );
+            },
+            () => {
+                console.log("failure2:weak connection");
+            }
+        );
+    },
+    () => {
+        console.log("failure:data not saved");
+    }
+)
