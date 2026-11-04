@@ -1,14 +1,22 @@
-function one() {
-    return 1;
+h1=document.querySelector("h1");
+
+function changeColor (color,delay,nextColorChange) {
+    setTimeout(()=>{
+        h1.style.color=color;
+        if(nextColorChange){
+            nextColorChange();
+        }
+   },delay);
 }
 
-function two() {
-    return one()+one();
-}
+changeColor("red",1000,()=>{
+    changeColor("green",1000,()=>{
+        changeColor("blue",1000,()=>{
+            changeColor("orange",1000,()=>{
+                changeColor("yellow",1000);
+          });
+        });
+    });
+});
 
-function three() {
-    let ans=two()+one();
-    console.log(ans);
-}
-
-three();
+//Callback nesting --> Callback hell
